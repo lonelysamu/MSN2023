@@ -1,0 +1,6 @@
+.buttonstyle1active {
+    border: 3px solid wheat;
+    background-color: wheat;
+    color: black;
+    transition: 0.5s;
+}

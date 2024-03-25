@@ -1,0 +1,422 @@
+/** @format */
+
+:root {
+  --main: #324d7f;
+  --mainlight: #68c3c4;
+  --second: #941354;
+  --secondlight: #f79a21;
+  --lightsecond: #bb1859;
+}
+
+.body {
+  color: white;
+  background-color: black;
+}
+
+.mainframe {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+
+  color: black;
+}
+
+.scrollbox{
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+
+}
+
+.scrollbox::-webkit-scrollbar {
+  display: none;
+}
+
+.clickable{
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.clickable:hover{
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+
+.clickablet2{
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.clickablet2:hover{
+  transform: translate(-5px, -5px);
+  box-shadow: 5px 5px #f79a21;
+  transition: 0.5s;
+}
+
+.clickablenoeffect{
+  cursor: pointer;
+}
+
+.imgbg {
+  background-image: url('../image/landingv2/backgroundv32.jpg');
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+
+
+.section {
+  min-height: 100vh;
+}
+
+.test {
+  border: 1px solid black;
+}
+
+
+.anchor {
+  position: relative;
+}
+
+.highestz{
+  z-index: 3;
+}
+.midz{
+  z-index: 2;
+}
+
+.sticktobot {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.sticktotop {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.navbutton{
+  cursor: pointer;
+  transition: 0.5s;
+  margin: 0;
+  
+  
+}
+
+.navbutton:hover{
+  color: white;
+  transition: 0.5s;
+  background-color: black;
+  box-shadow: 5px 5px #f79a21;
+  transform: translate(-5px, -5px);
+}
+
+.navbuttonactive{
+  color: white;
+  transition: 0.5s;
+  background-color: black;
+}
+
+.navbaractivator{
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.navbaractivator:hover{
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+
+.xltext{
+  font-size: calc(1.375rem + 2vw);
+  font-weight: bold;
+  line-height:100%;
+}
+
+.smalltext{
+  font-size: small;
+}
+
+.maxall{
+  height: 100%;
+  width: 100%;
+}
+.standardimg {
+  width: 100%;
+  height: auto;
+}
+
+.maxheight {
+  height: 100vh;
+}
+
+.iconimg{
+  width: 50px;
+  height: auto;
+}
+
+.blackbg {
+  background-color: black;
+  color: white;
+}
+
+.screen {
+  background-color: rgba(255, 255, 255, 0.712);
+  color: black;
+}
+
+.whitebg {
+  background-color: white;
+  color: black;
+}
+
+.darkbluebg{
+  background-color: var(--main);
+  color: white;
+}
+.taelbg{
+  background-color: var(--mainlight);
+}
+.orangebg{
+  background-color: var(--secondlight);
+}
+.lighredbg{
+  background-color: var(--lightsecond);
+}
+.redbg{
+  background-color: var(--second);
+  color: white;
+}
+
+
+.topbaricon {
+  height: 25px;
+  width: auto;
+  transition: 0.5s;
+}
+
+.topbaricon:hover {
+  transform: scale(1.2);
+  transition: 0.5s;
+}
+
+.nostyle {
+  background-color: transparent;
+  box-shadow: none;
+  border: none;
+  color: white;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+.nostyle:hover {
+  color: var(--secondlight);
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+.buttonstyle1{
+  cursor: pointer;
+  border: 3px solid black;
+  background-color: black;
+  color: white;
+  transition: 0.5s;
+}
+
+.buttonstyle1:hover{
+  border: 3px solid white;
+  background-color: white;
+  color: black;
+  transition: 0.5s;
+}
+
+.buttonstyle2{
+  cursor: pointer;
+  border: 3px solid transparent;
+  background-color: transparent;
+  color: black;
+  transition: 0.5s;
+}
+
+.buttonstyle2:hover{
+  border: 3px solid black;
+  background-color: black;
+  color: white;
+  box-shadow: 5px 5px #f79a21;
+  transform: translate(-5px, -5px);
+  transition: 0.5s;
+}
+
+.buttonstyle2active{
+  border: 3px solid black;
+  background-color: black;
+  color: white;
+  transition: 0.5s;
+}
+
+.fancybox1{
+  box-shadow: 5px 5px #f79a21;
+  
+}
+
+.hideori {
+  opacity: 0;
+}
+
+.hidetillscroll {
+  opacity: 0;
+}
+
+.fadefromright1 {
+  animation: 1s ease-in-out 0s 1 forwards SlideFromRight;
+}
+
+.fadefromleft1 {
+  animation: 1s ease-in-out 0s 1 forwards slideInFromLeft;
+}
+
+.fadefromleft2 {
+  animation: 1s ease-in-out 0.2s 1 forwards slideInFromLeft;
+}
+
+.fadefromleft3 {
+  animation: 1s ease-in-out 0.4s 1 forwards slideInFromLeft;
+}
+
+.fadefromleft4 {
+  animation: 1s ease-in-out 0.6s 1 forwards slideInFromLeft;
+}
+
+.fadefromtop1 {
+  animation: 1s ease-in-out 0s 1 forwards slideInFromTop;
+}
+
+.fadefromtop2 {
+  animation: 1s ease-in-out 0.2s 1 forwards slideInFromTop;
+}
+
+.fadefromtop3 {
+  animation: 1s ease-in-out 0.4s 1 forwards slideInFromTop;
+}
+
+.fadefromtop4 {
+  animation: 1s ease-in-out 0.6s 1 forwards slideInFromTop;
+}
+
+.fadein {
+  animation: 1s ease-in-out 0s 1 forwards FadeIn;
+}
+
+.fadein2 {
+  animation: 1s ease-in-out 0.2s 1 forwards FadeIn;
+}
+
+.fadein3 {
+  animation: 1s ease-in-out 0.4s 1 forwards FadeIn;
+}
+
+.fadein4 {
+  animation: 1s ease-in-out 0.6s 1 forwards FadeIn;
+}
+
+.fadeout {
+  animation: 1s ease-in-out 0s 1 forwards FadeOut;
+}
+
+.fadetoright {
+  animation: 1s ease-in-out 0s 1 forwards SlidetoRight;
+}
+
+.noticemeeffect {
+  animation: 1s ease-in-out 0s infinite forwards slideInFromTop;
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes SlidetoRight {
+  0% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+}
+
+@keyframes SlideFromRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+
+@keyframes slideInFromTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes FadeIn {
+  0% {
+    opacity: 0;
+
+  }
+
+  100% {
+    opacity: 1;
+
+  }
+}
+
+@keyframes FadeOut {
+  0% {
+    opacity: 1;
+
+  }
+
+  100% {
+    opacity: 0;
+
+  }
+}
+
+
+@media only screen and (max-width: 330px) {
+  .maxscreenwhensmall {
+    width: 100%;
+  }
+}

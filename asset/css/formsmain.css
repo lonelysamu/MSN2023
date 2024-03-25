@@ -1,0 +1,24 @@
+.buttonstyle3 {
+    background-color: black;
+    border: 3px solid black;
+    color: white;
+    transition: 0.5s;
+}
+
+.buttonstyle3:hover {
+    
+    background-color: var(--second);
+    border: 3px solid var(--second);
+    color: white;
+    transition: 0.5s;
+}
+
+.clickabletext{
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.clickabletext:hover{
+    transition: 0.5s;
+    color: var(--second);
+}

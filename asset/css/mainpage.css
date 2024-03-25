@@ -1,0 +1,34 @@
+.imgbg {
+    background-image: url('../image/landingv3/beigetowhite.jpg');
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-attachment: scroll;
+    background-size: cover;
+  }
+
+  .imgbg2 {
+    background-image: url('../image/landingv3/whitetobeige.jpg');
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-attachment: scroll;
+    background-size: cover;
+  }
+
+  .imgbg3 {
+    background-image: url('../image/landingv3/banner.jpg');
+    background-repeat: no-repeat;
+    background-position: center,right;
+    background-attachment: scroll;
+    background-size: cover;
+  }
+
+  .imgadjust{
+    background-position: left !important;
+    border-radius: 0.5rem;
+  }
+
+  .unactive{
+    filter: grayscale(1);
+  }
+
+

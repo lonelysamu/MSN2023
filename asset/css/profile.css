@@ -1,0 +1,7 @@
+.limitbadgesize {
+    max-width: 150px;
+}
+
+.unavailable {
+    filter: grayscale(1);
+}

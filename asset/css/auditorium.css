@@ -1,0 +1,59 @@
+.anchortotop {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    z-index: 1;
+}
+
+.topcard {
+    height: 100%;
+    filter: opacity(0);
+    transition: 0.5s;
+    color: white;
+}
+
+.topcard:hover {
+    filter: opacity(1);
+    transition: 0.5s;
+}
+
+.deactivated{
+    filter: grayscale();
+}
+
+.darkbluebg {
+    background-color: var(--main);
+    color: white;
+}
+
+.taelbg {
+    background-color: var(--mainlight);
+    color: black;
+}
+
+.yellowbg {
+    background-color: #f69c22;
+    color: black;
+}
+
+.orangebg {
+    background-color: #ea792d;
+    color: white;
+}
+
+.pinkbg {
+    background-color: #fb9fa4;
+    color: black;
+}
+
+.redbg {
+    background-color: #bb1859;
+    color: white;
+}
+
+.maroonbg {
+    background-color: #941354;
+    color: white;
+}

@@ -1,0 +1,77 @@
+.anchortotop {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    z-index: 1;
+}
+
+.topcard {
+    height: 100%;
+    background-color: var(--secondlight);
+    filter: opacity(0);
+    transition: 0.5s;
+    color: white;
+}
+
+.topcard:hover {
+    filter: opacity(1);
+    transition: 0.5s;
+}
+
+.buttonstyle1 {
+    border: 3px solid var(--second);
+    background-color: var(--second);
+    color: white;
+    transition: 0.5s;
+}
+
+.buttonstyle1:hover {
+    border: 3px solid black;
+    background-color: black;
+    color: white;
+    transition: 0.5s;
+}
+
+.accordion-button:not(.collapsed) {
+    color: white;
+    background-color:  var(--second);
+    transform: translate(-5px, -5px);
+    box-shadow: 5px 5px black;
+}
+
+.accordion-button:hover {
+    color: white;
+    background-color: var(--second);
+    box-shadow: none;
+    transform: translate(-5px, -5px);
+    box-shadow: 5px 5px black;
+    transition:0.5s;
+}
+
+.accordion-button {
+    color: black;
+    background-color: transparent;
+    transition:0.5s;
+}
+
+.accordion-item {
+    background-color: transparent;
+    border: 1px solid transparent;
+}
+
+.accordion-body{
+    background-color: var(--second);
+    color: white;
+}
+
+.clickable{
+    transition: 0.5s;
+  }
+  
+  .clickable:hover{
+    transform: translate(-5px,-5px);
+    box-shadow: 5px 5px var(--main);
+    transition: 0.5s;
+  }
