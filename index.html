@@ -1,0 +1,486 @@
+<!-- @format -->
+
+<?php require_once($_SERVER['DOCUMENT_ROOT'] . "/php/config.php"); ?>
+<?php guard(["guest", "authenticated"]) ?>
+
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-V1F3DQ6HJ4"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-V1F3DQ6HJ4');
+    </script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+
+    <!--font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&family=Roboto:wght@100;300;400;500;700;900&family=Staatliches&display=swap"
+        rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="asset\css\general.css">
+    <link rel="stylesheet" href="asset\css\mainpage.css">
+</head>
+
+<body>
+    <!--
+  <?php if (isset($_GET["ref"]) && !empty($_GET["ref"])) { ?>
+  <?php if ($_GET["ref"] === "questionnaire") { ?>
+  <script>
+    alert('Successfully submitted questionnaire!');
+  </script>
+  <?php } ?>
+  <?php if ($_GET["ref"] === "questionnairedone") { ?>
+  <script>
+    alert('You have already submitted the questionnaire!');
+  </script>
+  <?php } ?>
+  <script>
+    window.history.replaceState({}, document.title, "/" + "index.php");
+  </script>
+  <?php } ?>
+-->
+
+    <div class="container-fluid p-0 m-0 mainframe scrollbox altlightbg">
+
+        <div class="row altlightbg p-0 m-0 pt-5 justify-content-center align-items-center d-none d-md-flex">
+
+            <div class="col-12 col-md-11 col-lg-10 ">
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-12 col-md-auto text-end">
+                        <h1 class="speciatext p-0 m-0">MINGGU SAINS NEGARA</h1>
+
+                        <p class="p-0 m-0">
+                            <span class="BM"><strong>APRIL</strong>: Kesihatan Planet</span>
+                            <span class="ENG d-none"><strong>APRIL</strong>: Planetary Health</span>
+                        </p>
+                    </div>
+
+                    <div class="col  d-none d-md-block text-end">
+                        <a>
+                            <span class="BM">Hubungi Kami</span>
+                            <span class="ENG d-none">Contact Us</span>
+                        </a>
+
+                        <a href="https://twitter.com/officialmosti" class="nostyle" target="blank">
+                            <img src="asset\image\socialicon\twitteralt2.png" class="topbaricon" alt="" />
+                        </a>
+                        <a href="https://facebook.com/officialmosti" class="nostyle" target="blank">
+                            <img src="asset\image\socialicon\facebookalt2.png" class="topbaricon" alt="" />
+                        </a>
+                        <a href="https://www.youtube.com/user/onemosti" class="nostyle" target="blank">
+                            <img src="asset\image\socialicon\youtubealt2.png" class="topbaricon" alt="" />
+                        </a>
+                        <a href="https://www.instagram.com/officialmosti/" class="nostyle" target="blank">
+                            <img src="asset\image\socialicon\instagramalt2.png" class="topbaricon" alt="" />
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="row p-0 m-0 justify-content-center altlightbg sticky-top ">
+            <div class="col-12 col-md-11 col-lg-10 p-0 m-0">
+                <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top altlightbg ">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#">
+                            <img src="asset\image\logo\logoMSN-dark.png" alt="Bootstrap" class="iconimg d-lg-none">
+                        </a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav">
+                                <li class="nav-item ENG d-none navc1">
+                                    <a class="nav-link active" aria-current="page" >Home</a>
+                                </li>
+
+                                <li class="nav-item BM navc1">
+                                    <a class="nav-link active" aria-current="page" >Halaman Utama</a>
+                                </li>
+                                <li class="nav-item ENG d-none">
+                                    <a class="nav-link" href="#onlineparticipation">Join Now</a>
+                                </li>
+                                <li class="nav-item BM">
+                                    <a class="nav-link" href="#onlineparticipation">Sertai Sekarang</a>
+                                </li>
+                                <li class="nav-item ENG d-none">
+                                    <a class="nav-link" href="#aboutmsn">About MSN</a>
+                                </li>
+                                <li class="nav-item BM">
+                                    <a class="nav-link" href="#aboutmsn">Tentang MSN</a>
+                                </li>
+                                <li class="nav-item ENG d-none">
+                                    <a class="nav-link" href="#phyiscalevent">Near You</a>
+                                </li>
+                                <li class="nav-item BM">
+                                    <a class="nav-link" href="#phyiscalevent">Berdekatan Anda</a>
+                                </li>
+                                <li class="nav-item ENG d-none">
+                                    <a class="nav-link" href="https://certificates.minggusainsnegara.com/?lang=2">Certificates</a>
+                                </li>
+                                <li class="nav-item BM">
+                                    <a class="nav-link" href="https://certificates.minggusainsnegara.com/">Sijil</a>
+                                </li>
+
+                                <!-- <?php if (isAuthenticated()) { ?> -->
+                                <!--
+                                    <li class="nav-item ENG d-none">
+                                        <a class="nav-link" href="#">Profile</a>
+                                    </li>
+                                    <li class="nav-item BM">
+                                        <a class="nav-link" href="#">Profile</a>
+                                    </li>
+                                -->
+                                <!--<?php } else { ?> -->
+                                <li class="nav-item ENG d-none">
+                                    <a class="nav-link" href="#">Log In</a>
+                                </li>
+                                <li class="nav-item BM">
+                                    <a class="nav-link" href="#">Log Masuk</a>
+                                </li>
+                                <!--<?php } ?> -->
+
+                                <div class=" text-start p-0 m-0  " id="langselector">
+                                    <button class="buttonstyle2 p-2 m-0 buttonstyle2active" id="bmbutton">BM</button>
+                                    <button class="buttonstyle2 p-2 m-0" id="engbutton">ENG</button>
+
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+
+
+
+        <div class="row imgbg3 p-0 m-0 justify-content-center">
+
+            <div class="col-12 col-md-11 col-lg-10 p-0 m-0">
+                <div class="row p-0 m-0 halfsection justify-content-end align-content-center pt-2 pb-5">
+                    <div class="col-6 col-md-4 col-lg-3 text-end ">
+                        <img src="asset\image\logo\logoMSN-dark.png" class="standardimg" alt="">
+                    </div>
+                    <div class="col-12"></div>
+                    <div class="col-10 col-md-6 col-lg-4 text-end mt-2 " id="onlineparticipation">
+                        <p>
+                            <span class="BM">Sertai kami dan belajar secara maya, ataupun jumpai apa yang sedang berlaku
+                                berdekatan anda!</span>
+                            <span class="ENG d-none">Learn & Participate Virtually, or see whats happening near
+                                you!</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row altlightbg2 m-0 justify-content-center align-items-center">
+            <div class="col-12 col-md-11 col-lg-10">
+                <div class="row justify-content-center align-content-center align-items-md-center pt-5 pb-5">
+                    <div class="col-12 col-md-6 col-lg-4 text-end">
+                        <h2 class="xltext">
+                            <span class="BM">TONTON & BELAJAR</span>
+                            <span class="ENG d-none">WATCH & LEARN</span>
+                        </h2>
+                        <hr>
+                        <p>
+                            <span class="BM">Konten baru setiap bulan! Tontoni kandungan eksklusif yang telah dibawa
+                                kepada anda oleh pelbagai
+                                agensi dan rakan kandungan untuk meningkatkan kemahiran diri dan belajar mengenai subjek
+                                yang berkaitan</span>
+                            <span class="ENG d-none">New content every month! Watch exclusive content that has been
+                                brought to you by various
+                                agencies and content partner to upskill yourself and learn about the respective
+                                subject</span>
+                        </p>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-8 ">
+                        <div class="row justify-content-end justify-content-md-start p-1">
+                            <div class="col-3 p-1">
+                                <img src="asset\image\pillar\11.jpg" class="standardimg pillaricon clickablet2 BM"
+                                    onClick="parent.location='planetaryhealth/index.php'" alt="">
+                                <img src="asset\image\pillar\11.jpg"
+                                    class="standardimg pillaricon clickablet2 ENG d-none"
+                                    onClick="parent.location='planetaryhealth/index.php?lang=2'">
+                            </div>
+                            <div class="col-3 p-1">
+                                <img src="asset\image\pillar\12.jpg" class="standardimg pillaricon unactive" alt="">
+                            </div>
+                            <div class="col-3 p-1">
+                                <img src="asset\image\pillar\13.jpg" class="standardimg pillaricon unactive" alt="">
+                            </div>
+                            <div class="col-3 p-1">
+                                <img src="asset\image\pillar\14.jpg" class="standardimg pillaricon unactive" alt="">
+                            </div>
+                            <div class="col-3 p-1">
+                                <img src="asset\image\pillar\15.jpg" class="standardimg pillaricon unactive" alt="">
+                            </div>
+                            <div class="col-3 p-1">
+                                <img src="asset\image\pillar\16.jpg" class="standardimg pillaricon unactive" alt="">
+                            </div>
+                            <div class="col-3 p-1">
+                                <img src="asset\image\pillar\17.jpg" class="standardimg pillaricon unactive" alt="">
+                            </div>
+                            <div class="col-3 p-1">
+                                <img src="asset\image\pillar\archive.jpg" class="standardimg pillaricon unactive"
+                                    alt="">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row imgbg m-0 justify-content-center align-items-center" id="phyiscalevent">
+            <div class="col-12 col-md-11 col-lg-10">
+                <div class="row justify-content-center align-content-center align-items-md-center pt-5 pb-5 section">
+                    <div class="col-3 col-md-2 col-lg-2 p-1">
+                        <img src="asset\image\pillar\competition.jpg" class="standardimg pillaricon clickablet2" alt="">
+                    </div>
+                    <div class="col-3 col-md-2 col-lg-2 p-1">
+                        <img src="asset\image\pillar\carnival.jpg" class="standardimg pillaricon clickablet2" alt="">
+                    </div>
+                    <div class="col-3 col-md-2 col-lg-2 p-1">
+                        <img src="asset\image\pillar\exhibition.jpg" class="standardimg pillaricon clickablet2" alt="">
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 text-center text-md-start order-first order-md-last">
+                        <h2 class="xltext">
+                            <span class="BM">SERTAI KAMI!</span>
+                            <span class="ENG d-none">JOIN US!</span>
+                        </h2>
+                        <hr>
+                        <p>
+                            <span class="BM">Sertai Minggu Sains Negara 2024 melalui pelbagai Pertandingan, bengkel,
+                                pameran, dan banyak lagi!</span>
+                            <span class="ENG d-none">Participate in Minggu Sains Negara 2024 through a variety of
+                                Competitions, in person workshops, fairs and so much more here!</span>
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="row lightbg  m-0 justify-content-center align-items-center">
+            <div class="col-12 col-md-11 col-lg-10">
+                <div
+                    class="row justify-content-center align-content-center align-items-md-center pt-5 pb-5 halfsection">
+                    <div class="col-12 col-md-8 col-lg-6 text-center">
+                        <h2 class="xltext">
+                            <span class="BM">TUNTUTAN SIJIL</span>
+                            <span class="ENG d-none">MSN CERTIFICATES</span>
+                        </h2>
+                        <hr>
+                        <p>
+
+                            <span class="BM">Jika anda telah menyertai mana-mana program MSN yang akan memberikan markah
+                                PJASK kepada anda, anda boleh menuntut sijil anda di sini. Jika anda mengalami sebarang
+                                masalah, sila hubungi
+                                En.Quah (6014-6012556) melalui WhatsApp.</span>
+                            <span class="ENG d-none">If you have joined any MSN programs that will afford you PJASK
+                                marks, you can claim your certs here. If you encounter any issues,
+                                please contact Mr.Quah (6014-6012556) through WhatsApp.</span>
+
+                        </p>
+
+                        <button class="buttonstyle1 p-2 m-0 ">Tuntutan Sijil</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row imgbg2 m-0 justify-content-center align-items-center" id="aboutmsn">
+            <div class="col-12 col-md-11 col-lg-10">
+                <div class="row justify-content-end align-content-center align-items-md-start pt-5 pb-5 section">
+
+                    <div class="col-12 col-md-8 col-lg-9 text-end ps-5 pe-5">
+                        <h2>MINGGU SAINS NEGARA </h2>
+                        <hr>
+                        <p>
+                            <span class="BM">
+                                Minggu Sains Negara (MSN) 2024, yang dianjurkan oleh Kementerian Sains, Teknologi, dan
+                                Inovasi (MOSTI), bertujuan untuk mempromosikan inovasi dan kreativiti di seluruh negara
+                                selaras dengan Pelan Tindakan Dasar Sains, Teknologi, dan Inovasi Kebangsaan (DSTIN)
+                                2021-2030. Dilancarkan oleh Menteri Chang Lih Kang pada 1 April 2024, MSN 2024
+                                berlangsung sehingga Oktober 2024, menampilkan acara hibrid di 14 negeri di Malaysia dan
+                                aktiviti dalam talian, dengan sasaran 1.7 juta pelajar dan orang awam.
+                                <br><br>
+                                Objektif utama termasuk meningkatkan kesedaran akan kepentingan sains, meningkatkan
+                                minat dalam bidang STEM, dan mengiktiraf sumbangan saintifik. Aktiviti memberi tumpuan
+                                kepada pelbagai bidang termasuk Kesihatan Planet, Kimia, Bioteknologi, dan Angkasa.
+                                Agensi-agensi utama dan rakan kongsi memberi keutamaan kepada kreativiti, keselamatan,
+                                ekonomi, dan kesedaran budaya. Rakan kongsi termasuk Akademi Sains Malaysia, Pusat Sains
+                                Negara, Institut Bioteknologi Malaysia, dan lain-lain.
+                                <br><br>
+                                Lebih daripada 120 aktiviti disediakan untuk pelbagai kumpulan umur dan komuniti bandar
+                                dan luar bandar. Anugerah istimewa disediakan untuk pelajar dan sekolah yang menyertai
+                                dengan banyak, dengan sokongan dari MOSTI.
+                            </span>
+                            <span class="ENG d-none">
+                                The National Science Week (MSN) 2023, organized by the Ministry of
+                                Science, Technology, and
+                                Innovation (MOSTI), aims to promote innovation and creativity nationwide in line with
+                                the
+                                National Science, Technology, and Innovation Policy Action Plan (DSTIN) 2021-2030.
+                                Officiated by Minister Chang Lih Kang on April 17, 2023, MSN 2023 runs until October
+                                2023,
+                                featuring hybrid events across 14 Malaysian states and online activities, targeting 1.7
+                                million students and the public.
+                                <br><br>
+                                Key objectives include raising awareness of science's importance, boosting STEM
+                                interest,
+                                and recognizing scientific contributions. Activities focus on various fields including
+                                Planetary Health, Chemistry, Biotechnology, and Space. Leading agencies and partners
+                                prioritize creativity, safety, economy, and cultural awareness. Partners include the
+                                Academy
+                                of Sciences Malaysia, National Science Centre, Malaysian Biotechnology Institute, and
+                                others.
+                                <br><br>
+                                Over 120 activities cater to various age groups and urban and rural communities. Special
+                                awards are available for high-participation students and schools, supported by
+                                MOSTI.</span>
+
+                        </p>
+                        <br><br>
+                        <h2>
+                            <span class="BM">MERAKYATKAN SAINS, MENGINSANKAN TEKNOLOGI</span>
+                            <span class="ENG d-none">ENCULTURATING SCIENCE, HUMANIZING TECHNOLOGY</span>
+                        </h2>
+                        <hr>
+                        <p>
+                            <span class="BM">Minggu Sains Negara (MSN) selari dengan konsep Keluarga Malaysia seperti
+                                yang dinyatakan oleh Perdana Menteri, dirombak semula sebagai Minggu Sains Negara
+                                Keluarga Malaysia (MSNKM) 2022.
+                                <br><br>
+                                Pada tahun 2020, MSN menyesuaikan diri dengan platform maya, menghasilkan jumlah
+                                tontonan tertinggi dalam sejarah sebanyak 2,482,059 tontonan dari April hingga November,
+                                berbanding dengan 88,018 pada tahun 2018 dan 928,206 pada tahun 2019. Pada tahun 2021,
+                                semua aktiviti dijalankan secara dalam talian, dengan 157 program yang melibatkan
+                                1,034,771 peserta.
+                                <br><br>
+                                MSNKM 2022, bertemakan "Merakyatkan Sains, Menginsankan Teknologi," bertujuan untuk
+                                menarik 1.5 juta peserta, termasuk pelajar dan orang awam. Ia akan dijalankan secara
+                                dalam talian dari April hingga Oktober 2022, dengan fokus bulanan yang selari dengan
+                                hari penting berkaitan STI. Tujuh bidang fokus akan mengaplikasikan tema
+                                melintang.</span>
+                            <span class="ENG d-none">
+                                The National Science Week (MSN) aligns with the concept of Keluarga Malaysia as outlined
+                                by
+                                the Prime Minister, rebranded as the National Science Week Keluarga Malaysia (MSNKM)
+                                2022.
+                                <br><br>
+                                In 2020, MSN adapted to virtual platforms, resulting in a record-high engagement of
+                                2,482,059 views from April to November, compared to 88,018 in 2018 and 928,206 in 2019.
+                                In
+                                2021, all activities were online, with 157 programs engaging 1,034,771 participants.
+                                <br><br>
+                                MSNKM 2022, themed "Merakyatkan Sains, Menginsankan Teknologi," targets 1.5 million
+                                participants, including students and the public. It will be conducted online from April
+                                to
+                                October 2022, with monthly focus areas aligning with STI-related important days. Seven
+                                focus
+                                areas will apply cross-cutting themes.</span>
+                        </p>
+                    </div>
+                    <div
+                        class="col-5 col-md-4 col-lg-3 order-first order-md-last imgbg3 halfsection imgadjust d-none d-md-block">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row blackbg p-0 m-0 justify-content-center align-content-center">
+            <footer class="col-10 col-md-8 col-lg-6 p-0 m-0 hideori fadefromleft1">
+                <div class="row p-0 m-0 justify-content-start align-content-center">
+                    <div class="col-12 col-xl-6 text-start p-4">
+                        <p class="m-0" style="font-size: small">
+                            <span class="BM">
+                                <strong>Kementerian Sains, Teknologi & Inovasi (MOSTI)</strong><br>
+                                Tingkat 1-7, Blok C4 & C5, Kompleks C,
+                                Pusat Pentadbiran Kerajaan Persekutuan<br>
+                                62662 Putrajaya, MALAYSIA<br><br>
+                                Tel MyGCC: (603) 8000 8000<br>
+                                Faks: (603) 8888 9070<br>
+                                E-mail: enquiry[at]mosti.gov.my
+                            </span>
+                            <span class="ENG d-none">
+                                <strong>Ministry of Science, Technology & Innovation(MOSTI)</strong><br>
+                                Floors 1-7, Block C4 & C5, Complex C,
+                                Federal Government Administrative Centre<br>
+                                62662 Putrajaya, MALAYSIA<br><br>
+                                Tel MyGCC: (603) 8000 8000<br>
+                                Faks: (603) 8888 9070<br>
+                                E-mel: enquiry[at]mosti.gov.my
+                            </span>
+                        </p>
+                    </div>
+                    <div
+                        class="col-12 col-xl-6 text-start text-xl-center p-4 pt-0 d-flex justify-content-start justify-content-xl-center align-items-center">
+                        <div>
+                            <p class="m-0" style="font-size: small">
+                                <span class="BM">Hubungi Kami Di:</span>
+                                <span class="ENG d-none">Contact Us At:</span>
+                            </p>
+                            <a href="https://twitter.com/officialmosti" class="nostyle" target="blank">
+                                <img src="asset\image\socialicon\twitter.png" class="topbaricon" alt="" />
+                            </a>
+                            <a href="https://facebook.com/officialmosti" class="nostyle" target="blank">
+                                <img src="asset\image\socialicon\facebook.png" class="topbaricon" alt="" />
+                            </a>
+                            <a href="https://www.youtube.com/user/onemosti" class="nostyle" target="blank">
+                                <img src="asset\image\socialicon\youtube.png" class="topbaricon" alt="" />
+                            </a>
+                            <a href="https://www.instagram.com/officialmosti/" class="nostyle" target="blank">
+                                <img src="asset\image\socialicon\instagram.png" class="topbaricon" alt="" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-12 text-center">
+                        <a style="font-size: small">Powered by </a>
+                        <a href="https://www.synapzemy.com/" style="font-size: small"
+                            class="nostyle"><strong>SYNAPZE</strong></a>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    </div>
+
+    <!--
+
+                            <span class="BM"></span>
+                            <span class="ENG d-none"></span>
+-->
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <script src="asset\js\langselector.js"></script>
+</body>
+
+</html>
