@@ -1,0 +1,77 @@
+.imgbg {
+    background-image: url('../image/landingv3/beigetowhite.jpg');
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-attachment: scroll;
+    background-size: cover;
+  }
+
+  .imgbg2 {
+    background-image: url('../image/landingv3/whitetobeige.jpg');
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-attachment: scroll;
+    background-size: cover;
+  }
+
+  .imgbg3 {
+    background-image: url('../image/landingv3/banner.jpg');
+    background-repeat: no-repeat;
+    background-position: center,right;
+    background-attachment: scroll;
+    background-size: cover;
+  }
+
+  .imgadjust{
+    background-position: left !important;
+    border-radius: 0.5rem;
+  }
+
+  .unactive{
+    filter: grayscale(1);
+  }
+
+  .buttonstyle1active{
+    border: 3px solid var(--second);
+    background-color: var(--second);
+    color: white;
+    transition: 0.5s;
+  }
+
+
+  .anchor {
+    position: relative;
+}
+
+.anchortotop {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    z-index: 1;
+    border-radius: 0.5rem;
+}
+
+.topcard {
+    height: 100%;
+    filter: opacity(0);
+    transition: 0.5s;
+    color: white;
+    border-radius: 0.5rem;
+}
+
+.topcard:hover {
+    filter: opacity(1);
+    transition: 0.5s;
+}
+
+.specialbg{
+    background-color: rgba(0, 0, 0, 0.664);
+    color: white;
+    border-radius: 0.5rem;
+}
+
+.deactivated {
+    filter: grayscale();
+}
